@@ -35,6 +35,7 @@ void WaitPushButton ::waitms() {
   }
 }
 void WaitPushButton ::waits(uint16_t delay) {
+  delay=delay*1000;
   if (digitalRead(PbON_pin)) {
     T = millis();
     digitalWrite(led_pin, HIGH);
