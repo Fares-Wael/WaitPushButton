@@ -11,9 +11,6 @@ void waitms(uint16_t delay1);
 WaitPushButton(uint8_t  led,uint8_t  pb_ON, uint8_t  pb_OFF,uint16_t  mstime);
 WaitPushButton(uint8_t  led,uint8_t  pb_ON, uint8_t  pb_OFF);
 };
-
-
-
 WaitPushButton :: WaitPushButton(uint8_t  led,uint8_t  pb_ON, uint8_t  pb_OFF,uint16_t  mstime){
 led_pin=led;
 PbON_pin=pb_ON;
@@ -62,7 +59,6 @@ WaitPushButton x(8,9,10);
 void setup() {
 x.init();
 }
-
 void loop() {
 x.waitms(5000);
 }
